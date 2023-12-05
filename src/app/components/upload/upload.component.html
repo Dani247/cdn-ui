@@ -1,0 +1,23 @@
+@if(completed) {
+<h1>File uploaded successfully</h1>
+}
+
+@if (!uploading) {
+<h1>Upload a file</h1>
+
+<div class="select-file">
+    <label for="files" class="btn">
+        @if (file) {Change File} @else {Select File}
+    </label>
+    <input id="files" style="display: none;" type="file" name="myFile" (change)="onFileSelected($event)" />
+</div>
+@if (file) {
+<div> {{file.name}}</div>
+<button (click)="onSubmitClick()">Upload File</button>
+}
+}
+
+@if (uploading) {
+<h3>Uploading file</h3>
+<app-progress-bar [progress]="progress"></app-progress-bar>
+}

@@ -1,0 +1,7 @@
+.select-file label {
+    padding: 2rem;
+    display: block;
+    cursor: pointer;
+    width: fit-content;
+    box-shadow: 0 0 2px 3px aliceblue;
+}

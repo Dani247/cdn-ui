@@ -1,0 +1,10 @@
+<h1>Your files</h1>
+@if (!(files$ | async)) {
+    <p>Loading</p>
+} @else {
+    <div class="files-container">
+        @for (file of files$ | async; track file.id) {
+            <app-file [data]="file"></app-file>
+        }
+    </div>
+}
