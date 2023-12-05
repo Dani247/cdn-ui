@@ -2,7 +2,7 @@ import { HttpClient, HttpEvent, HttpEventType, HttpRequest } from '@angular/comm
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
 
-const baseUrl = 'http://primerocomer.com.mx:8003'
+const baseUrl = 'https://cdn.primerocomer.com.mx'
 
 @Injectable({
   providedIn: 'root'

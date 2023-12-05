@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { FileDetails } from './models';
 
-const baseUrl = 'http://primerocomer.com.mx:8003'
+const baseUrl = 'https://cdn.primerocomer.com.mx'
 
 @Injectable({
   providedIn: 'root'

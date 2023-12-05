@@ -13,7 +13,7 @@ export class FileComponent {
   @Input({ required: true }) data!: FileDetails;
 
   downloadFile(data: FileDetails) {
-    const baseUrl = 'http://primerocomer.com.mx:8003';
+    const baseUrl = 'https://cdn.primerocomer.com.mx';
     const url = `${baseUrl}/download/${data.id}${data.extension}`;
     const fileName = data.originalname;
 
